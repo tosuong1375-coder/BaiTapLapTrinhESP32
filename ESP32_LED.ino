@@ -1,8 +1,8 @@
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(2, OUTPUT);
-  Serial.println("ESP32 READY");
+  Serial.println("ESP32 VERSION 2");
 }
 
 void loop() {
@@ -11,7 +11,7 @@ void loop() {
 
     if (data == 'A') {
       digitalWrite(2, HIGH);
-      Serial.println("LED ON");
+      Serial.println("LED IS ON");
     }
     else if (data == 'B') {
       digitalWrite(2, LOW);
